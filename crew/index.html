@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="crew">
+      <header>
+        <nav>
+          <div id="xMark"><span></span><span></span><span></span></div>
+          <a href="/" class="logo_holder">
+            <img src="/assets/shared/logo.svg" alt="Website logo" />
+          </a>
+          <div class="nav-line"></div>
+          <ul>
+            <li><a class="nav-links" href="/">home</a></li>
+            <li><a class="nav-links" href="/destination/">destination</a></li>
+            <li><a class="nav-links active" href="/crew/">crew</a></li>
+            <li>
+              <a class="nav-links" href="/technology/" class="active"
+                >technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="container">
+        <p class="page_desc"><span class="count">02</span>meet your crew</p>
+        <div class="main_elements">
+          <article>
+            <div class="content">
+              <div class="heading">
+                <!-- this content is displayed in reverse -->
+                <p id="crewDescription" class="changing">
+                  Douglas Gerald Hurley is an American engineer, former Marine
+                  Corps pilot and former NASA astronaut. He launched into space
+                  for the third time as commander of Crew Dragon Demo-2.
+                </p>
+                <h3 class="changing" id="crewName">douglas harley</h3>
+                <div class="job_title changing" id="crewRole">Commander</div>
+              </div>
+              <ul>
+                <li><a class="active" data-index="0"></a></li>
+                <li><a data-index="1"></a></li>
+                <li><a data-index="2"></a></li>
+                <li><a data-index="3"></a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="img_article">
+            <div class="img_holder">
+              <img
+                src="/assets/crew/image-douglas-hurley.webp"
+                alt="crew member"
+                class="changing"
+                id="crewImg"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="/js/main.js" type="module"></script>
+    <script src="/js/crew.js" type="module"></script>
+  </body>
+</html>
